@@ -36,6 +36,27 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<version>${project.parent.version}</version>
 			</plugin>
+			<plugin>
+  				<groupId>org.codehaus.mojo</groupId>
+  				<artifactId>exec-maven-plugin</artifactId>
+  				<version>1.6.0</version>
+  				<configuration>
+    					<mainClass>javaclass.java</mainClass>
+  				</configuration>
+			</plugin>
+			<plugin>
+  				<groupId>org.springframework.boot</groupId>
+  				<artifactId>spring-boot-maven-plugin</artifactId>
+  				<version>3.0.2</version>
+  				<executions>
+   				 	<execution>
+     						 <goals>
+        						<goal>repackage</goal>
+      						</goals>
+   					 </execution>
+  				</executions>
+			</plugin>
+			
 		</plugins>
 		<finalName>ecllipse-docker-demo</finalName>
 	</build>
