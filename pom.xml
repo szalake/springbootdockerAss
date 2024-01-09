@@ -5,11 +5,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>demo-docker</artifactId>
+	<artifactId>ecllipse-docker-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
-
-	<name>demo-docker</name>
+	<name>ecllipse-docker-demo</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -41,7 +39,6 @@
 	</dependencies>
 
 	<build>
-		<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
